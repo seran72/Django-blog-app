@@ -1,10 +1,13 @@
 {% extends "layout.html" %}
-
+{% load static%}
 {% block title %}
     Home
 {% endblock %}
 
 {% block content %}
     <h1> Home </h1>
-    <p>Check out my <a href='/about'> About </a> page</p>
+    <section>
+        <p class="well">Welcome to my Blog</p>
+        <p>Check out my <a href='/about'> About </a> page</p>
+    </section>
 {% endblock %}
