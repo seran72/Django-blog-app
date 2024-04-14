@@ -12,14 +12,14 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <script src="{% static 'js/main.js' %}" defer></script>
 </head>
-<body class="body">
+<body>
     <nav>
-        <a href="/">
+        {% comment %} <a href="/">
             <span class="home-button"  role="img" aria-label="Home" title="Home">Home</span>
         </a> | 
         <a href="/about">
             <span role="img" aria-label="About" title="About">About</span>
-        </a> | 
+        </a> |  {% endcomment %}
         <a href="{% url 'posts:list' %}">
             <span role="img" aria-label="Posts" title="Posts">Blog</span>
         </a> | 
